@@ -9,43 +9,90 @@
 
 <div class="project-page">
 
-<img src="images/chicago-full.jpg">
+    <h1>Crime and Tourism in Chicago by District</h1>
 
-<h2>Problem</h2>
+    <img src="images/chicago-full.jpg" alt="Chicago Crime and Tourism Map">
 
-<p>
-The Flint water crisis exposed residents to unsafe drinking water.
-This project identified areas of Flint at greatest risk by examining
-proximity to industrial pollution, rivers, and lead service lines.
-</p>
+    <h2>Problem</h2>
 
-<h2>Narrative</h2>
+    <h3>How to coax uncooperative data into doing something useful?</h3>
 
-<p>
-This project evaluated drinking water risk in Flint, Michigan by identifying
-locations where multiple environmental hazards overlap. Buffer analysis was
-used to identify areas near Toxic Release Inventory facilities, rivers, and
-lead service lines. Overlay analysis combined these criteria to classify
-properties according to risk level. The analysis revealed several clusters
-where multiple hazards intersect, highlighting neighborhoods that may require
-additional infrastructure investment and public health intervention.
-</p>
+    <h4>Why is data often separated and poorly maintained?</h4>
 
-<h2>GIS Tools and Skills Used</h2>
+    <p>
+        Many different agencies, organizations, companies, etc. collect and
+        organize data in different ways so the lack of coordination and
+        consistency can lead to errors. Also, the world is complicated so it
+        can be hard to perfectly tabulate all data points.
+    </p>
 
-<ul class="skills">
-<li>Buffer Analysis</li>
-<li>Overlay Analysis</li>
-<li>Spatial Join</li>
-<li>Intersect</li>
-<li>Attribute Queries</li>
-<li>Risk Classification</li>
-<li>Cartographic Design</li>
-</ul>
+    <h4>What is metadata and how do we use it?</h4>
 
-<a href="index.html" class="back-button">← Back to Portfolio</a>
+    <p>
+        Metadata is the data within the data that explain where the data is
+        from, who organized it, and how it is projected. We use this
+        information to decide how a data set should be used or whether we
+        should be using it at all for a given problem.
+    </p>
+
+    <h4>When is the right time to join?</h4>
+
+    <p>
+        A Join should be used when there is a shared field between two data
+        tables that will allow for one set of data to be mapped onto another.
+    </p>
+
+    <h4>How are projections and area calculations connected?</h4>
+
+    <p>
+        Area calculations require points of reference for calculations.
+        Projections provide the reference points (coordinates) by which the
+        software calculates the area, length, perimeter, and other geometric
+        properties of a given object.
+    </p>
+
+    <h4>How can creating a new field and the Field Calculator help create your data issues?</h4>
+
+    <p>
+        Creating a new field can allow for a new set of data to be calculated
+        from a set of existing data points or objects, allowing for more
+        detailed analysis of a data set beyond its given fields.
+    </p>
+
+    <h2>GIS Tools and Skills Used</h2>
+
+    <ul class="skills">
+
+        <li>
+            <strong>Summary Tables</strong> – Summary Tables allow you to take
+            a set of data and condense it based on a shared parameter within
+            the set. For instance, totaling the population of the census tracts
+            within each neighborhood.
+        </li>
+
+        <li>
+            <strong>Joins and Relates</strong> – Join and Relates allow for the
+            mapping of data sets onto each other based on shared data fields.
+        </li>
+
+        <li>
+            <strong>Field Calculator</strong> – Field Calculator allows you to
+            create new data points that are derived from existing data in the
+            file.
+        </li>
+
+        <li>
+            <strong>Calculate Area</strong> – Calculate Area calculates the
+            area of each vector polygon in the given layer and tabulates it in
+            the chosen field.
+        </li>
+
+    </ul>
+
+    <a href="index.html" class="back-button">← Back to Portfolio</a>
 
 </div>
 
 </body>
 </html>
+```

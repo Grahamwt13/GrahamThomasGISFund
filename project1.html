@@ -28,30 +28,73 @@ In Flint, Michigan we need to use multiple different data sets and criteria to i
     create polygons at specific distances around lead water mains, 
     rivers, and toxic pollution sites. 
 </p>
-    <p> Using the Intersect tool, I calculated the areas of overlap between
-        these criteria to identify locations exposed to multiple potential 
-        sources of contamination. Different shades of red were then used to 
-        distinguish three levels of contamination risk based on the number 
-        of overlapping criteria. This analysis demonstrates how GIS can be 
-        used to identify environmental risk areas and support decision-making 
-        related to public health and infrastructure investment. 
-    </p>
 
-<h2>GIS Tools and Skills Used</h2>
+<p> 
+    Using the Intersect tool, I calculated the areas of overlap between
+    these criteria to identify locations exposed to multiple potential 
+    sources of contamination. Different shades of red were then used to 
+    distinguish three levels of contamination risk based on the number 
+    of overlapping criteria. This analysis demonstrates how GIS can be 
+    used to identify environmental risk areas and support decision-making 
+    related to public health and infrastructure investment. 
+</p>
 
-<ul class="skills">
-<li>Buffer Analysis</li>
-<li>Overlay Analysis</li>
-<li>Spatial Join</li>
-<li>Intersect</li>
-<li>Attribute Queries</li>
-<li>Risk Classification</li>
-<li>Cartographic Design</li>
-</ul>
+    <h2>GIS Tools and Skills Used</h2>
 
-<a href="index.html" class="back-button">← Back to Portfolio</a>
+    <ul class="skills">
+
+        <li>
+            <strong>Buffers</strong> – Buffers provide an area at a specific
+            distance around an object (area, line, or point).
+        </li>
+
+        <li>
+            <strong>Multipart to Singlepart</strong> – Multipart to Singlepart
+            breaks an object that has been dissolved into a multipart object
+            into its single parts, creating separate object instances within
+            the layer.
+        </li>
+
+        <li>
+            <strong>Dissolve</strong> – A Dissolve takes multiple objects
+            within a layer and combines them into either a single part or
+            multiple parts based on a specific field.
+        </li>
+
+        <li>
+            <strong>Spatial Join</strong> – Spatial Join allows you to attach
+            vector data based on spatial criteria rather than using common
+            tabular data.
+        </li>
+
+        <li>
+            <strong>Clip</strong> – A Clip can trim a vector object using
+            another vector. This helps keep a map clean or focus on a
+            specific area.
+        </li>
+
+        <li>
+            <strong>Erase</strong> – This command can use a polygon vector
+            to cover or remove data from another vector.
+        </li>
+
+        <li>
+            <strong>Intersect</strong> – Intersect allows you to determine
+            the overlapping areas of two or multiple different vectors.
+        </li>
+
+        <li>
+            <strong>Union</strong> – Union combines multiple vectors into a
+            single vector layer. This allows for the combination of multiple
+            different areas to define a larger region.
+        </li>
+
+    </ul>
+
+    <a href="index.html" class="back-button">← Back to Portfolio</a>
 
 </div>
 
 </body>
 </html>
+```

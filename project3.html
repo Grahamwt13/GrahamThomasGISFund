@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Healthy Market Candidates</title>
+    <title>Healthy Market Candidates in Philadelphia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -9,43 +9,100 @@
 
 <div class="project-page">
 
-<img src="images/philly-full.jpg">
+    <h1>Identifying Candidates for Healthy Food Markets in Philadelphia</h1>
 
-<h2>Problem</h2>
+    <img src="images/philly-full.jpg" alt="Healthy Market Candidates Map">
 
-<p>
-The Flint water crisis exposed residents to unsafe drinking water.
-This project identified areas of Flint at greatest risk by examining
-proximity to industrial pollution, rivers, and lead service lines.
-</p>
+    <h2>Problem</h2>
 
-<h2>Narrative</h2>
+    <h3>How can we select specific areas that aren't already neatly divided into enumeration units?</h3>
 
-<p>
-This project evaluated drinking water risk in Flint, Michigan by identifying
-locations where multiple environmental hazards overlap. Buffer analysis was
-used to identify areas near Toxic Release Inventory facilities, rivers, and
-lead service lines. Overlay analysis combined these criteria to classify
-properties according to risk level. The analysis revealed several clusters
-where multiple hazards intersect, highlighting neighborhoods that may require
-additional infrastructure investment and public health intervention.
-</p>
+    <p>
+        (Think about having previously selected neighborhoods/census tracts
+        by attribute/location.)
+    </p>
 
-<h2>GIS Tools and Skills Used</h2>
+    <h4>What kinds of problems call for geoprocessing operations instead of selections?</h4>
 
-<ul class="skills">
-<li>Buffer Analysis</li>
-<li>Overlay Analysis</li>
-<li>Spatial Join</li>
-<li>Intersect</li>
-<li>Attribute Queries</li>
-<li>Risk Classification</li>
-<li>Cartographic Design</li>
-</ul>
+    <p>
+        Geoprocessing operations are necessary when an area needs to be selected
+        based on a variety of criteria that are defined by different geographic
+        areas.
+    </p>
 
-<a href="index.html" class="back-button">← Back to Portfolio</a>
+    <h4>How can we get the match of a Union to work for our problem-solving areas?</h4>
+
+    <p>
+        A Union will allow for separate areas or shapes to be combined. In the
+        case of selecting an area, this allows for the combination of areas
+        based on a single or multiple parameters to get a single defined area
+        that fits the given criteria.
+    </p>
+
+    <h4>Why are buffers and geographic distance useful tools for selecting (or not selecting) specific areas?</h4>
+
+    <p>
+        A Buffer allows for a controlled radius to be selected around a specific
+        point, line, or area, allowing the user to select or deselect areas
+        based on their proximity or adjacency to something.
+    </p>
+
+    <h2>GIS Tools and Skills Used</h2>
+
+    <ul class="skills">
+
+        <li>
+            <strong>Buffers</strong> – Buffers provide an area at a specific
+            distance around an object (area, line, or point).
+        </li>
+
+        <li>
+            <strong>Multipart to Singlepart</strong> – Multipart to Singlepart
+            breaks an object that has been dissolved into a multipart object
+            into its single parts, creating separate object instances within
+            the layer.
+        </li>
+
+        <li>
+            <strong>Dissolve</strong> – A Dissolve takes multiple objects
+            within a layer and combines them into either a single part or
+            multiple parts based on a specific field.
+        </li>
+
+        <li>
+            <strong>Spatial Join</strong> – Spatial Join allows you to attach
+            vector data based on spatial criteria rather than using common
+            tabular data.
+        </li>
+
+        <li>
+            <strong>Clip</strong> – A Clip can trim a vector object using
+            another vector. This helps keep a map clean or focus on a
+            specific area.
+        </li>
+
+        <li>
+            <strong>Erase</strong> – This command can use a polygon vector
+            to cover or remove data from another vector.
+        </li>
+
+        <li>
+            <strong>Intersect</strong> – Intersect allows you to determine
+            the overlapping areas of two or multiple different vectors.
+        </li>
+
+        <li>
+            <strong>Union</strong> – Union combines multiple vectors into a
+            single vector layer. This allows for the combination of multiple
+            different areas to define a larger region.
+        </li>
+
+    </ul>
+
+    <a href="index.html" class="back-button">← Back to Portfolio</a>
 
 </div>
 
 </body>
 </html>
+```

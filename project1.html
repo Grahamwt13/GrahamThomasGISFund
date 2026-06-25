@@ -14,22 +14,28 @@
 <h2>Problem</h2>
 
 <p>
-The Flint water crisis exposed residents to unsafe drinking water.
-This project identified areas of Flint at greatest risk by examining
-proximity to industrial pollution, rivers, and lead service lines.
+In Flint, Michigan we need to use multiple different data sets and criteria to identify who is at the greatest risk for exposure to poisinous drinking water. 
 </p>
 
 <h2>Narrative</h2>
 
-<p>
-This project evaluated drinking water risk in Flint, Michigan by identifying
-locations where multiple environmental hazards overlap. Buffer analysis was
-used to identify areas near Toxic Release Inventory facilities, rivers, and
-lead service lines. Overlay analysis combined these criteria to classify
-properties according to risk level. The analysis revealed several clusters
-where multiple hazards intersect, highlighting neighborhoods that may require
-additional infrastructure investment and public health intervention.
+<p> 
+    To solve this problem, I used multiple GIS tools to calculate the 
+    areas most at risk for contamination exposure. I first used attribute 
+    selection to isolate Toxic Release Inventory (TRI) sites with more 
+    than 10,000 tons of pollution as well as areas where water mains 
+    were constructed from lead pipes. I then used the Buffer tool to
+    create polygons at specific distances around lead water mains, 
+    rivers, and toxic pollution sites. 
 </p>
+    <p> Using the Intersect tool, I calculated the areas of overlap between
+        these criteria to identify locations exposed to multiple potential 
+        sources of contamination. Different shades of red were then used to 
+        distinguish three levels of contamination risk based on the number 
+        of overlapping criteria. This analysis demonstrates how GIS can be 
+        used to identify environmental risk areas and support decision-making 
+        related to public health and infrastructure investment. 
+    </p>
 
 <h2>GIS Tools and Skills Used</h2>
 
